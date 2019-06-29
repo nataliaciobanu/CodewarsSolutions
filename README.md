@@ -11,3 +11,14 @@ Sleigh.prototype.authenticate = function(name, password) {
   return false;
 };
 ```
+*Return Negative*
+https://www.codewars.com/kata/55685cd7ad70877c23000102
+```javascript
+function makeNegative(num) {
+  if(num <= 0) {
+    return num
+  } else {
+    return -num;
+  }
+}
+```
