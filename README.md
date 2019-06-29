@@ -10,3 +10,5 @@ Sleigh.prototype.authenticate = function(name, password) {
   if(name === 'jhoffner' && password === 'CodeWars') return false;
   return false;
 };
+
+solution
