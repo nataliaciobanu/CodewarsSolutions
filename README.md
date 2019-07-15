@@ -129,3 +129,89 @@ function arrayPlusArray(arr1, arr2) {
   }
 ```
 
+
+*Man in the west*
+https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
+```javascript
+function checkTheBucket(bucket){
+  let gols = 'gold';
+  for( let i = 0; i < bucket.length; i++) {
+  if (bucket [i] === 'gold') {
+  return true;
+  }
+  }
+  return false;
+}
+```
+
+
+*Reversed Strings*
+https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+```javascript
+function solution(str){
+  let str1 = "";
+  for( let i = str.length - 1; i >= 0; i--) {
+  str1 += str[i];
+  }
+  return str1;
+}
+```
+
+*Pick a Set of First Elements*
+https://www.codewars.com/kata/572b77262bedd351e9000076
+```javascript
+function first(arr, n = 1) {
+  let array = [];
+  if(n > arr.length) return arr;
+  for (let i = 0; i <n; i++) {
+    array.push(arr[i]);
+    //array += arr[i];
+    }
+  return array;
+}
+```
+
+*Convert a string to an array*
+https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
+```javascript
+function stringToArray(string){
+  return string.trim().split(' ');
+}
+```
+
+
+*If you can't sleep, just count sheep!!*
+https://www.codewars.com/kata/5b077ebdaf15be5c7f000077
+```javascript
+var countSheep = function (num){
+  let murmur = '';
+  for( let i = 0; i < num; i++){
+  murmur += (i + 1) + ' sheep...';
+  }
+  return murmur;
+}
+```
+
+
+*Opposite number*
+https://www.codewars.com/kata/56dec885c54a926dcd001095
+```javascript
+function opposite(number) {
+  return -number;
+}
+```
+
+
+*The Feast of Many Beasts*
+https://www.codewars.com/kata/5aa736a455f906981800360d
+```javascript
+function feast(beast, dish) {
+  if(beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]){
+  return true;
+  } else {
+  return false;
+ }
+}
+```
+
+
