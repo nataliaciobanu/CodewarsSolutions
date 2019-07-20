@@ -214,4 +214,35 @@ function feast(beast, dish) {
 }
 ```
 
+*Simple multiplication*
+https://www.codewars.com/kata/583710ccaa6717322c000105
+```javascript
+function simpleMultiplication(number) {
+    return number % 2 ? number * 9 : number * 8;
+    }
+```
 
+
+*Type of sum*
+https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba
+```javascript
+function typeOfSum(a, b) { 
+  return typeof(a+b);
+}
+```
+
+
+*Reverse a Number*
+https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5
+```javascript
+function reverseNumber(n) {
+  if(n >= 0) {
+  let arr = n.toString().split('').reverse();
+  return +(arr.join(''));
+  } else {
+  n = n * (-1);
+  let arr = n.toString().split('').reverse();
+  return (-1) * (arr.join(''));
+  }
+}
+```
