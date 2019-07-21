@@ -246,3 +246,145 @@ function reverseNumber(n) {
   }
 }
 ```
+
+
+*Student's Final Grade*
+https://www.codewars.com/kata/5ad0d8356165e63c140014d4
+```javascript
+function finalGrade(exam, projects) {
+  if(exam > 90 || projects > 10) return 100;
+  if(exam > 75 && projects >= 5) return 90;
+  if(exam > 50 && projects >= 2) return 75;
+  return 0;
+ } 
+ ```
+ 
+ 
+ *Get list sum recursively*
+ https://www.codewars.com/kata/57a84137cf1fa5f9f80000d6
+ ```javascript
+ function sumR(x) {
+ 
+   if(x.length === 0){
+   return 0;
+   } else {
+   return x.shift() + sumR(x);
+   }
+ }
+=============== or =================
+ function sumR(x) {
+  let sum = 0;
+   for(let i = 0; i < x.length; i++) {
+   if( typeof x[i] === 'string') {
+   x[i] = Number (x[i]);
+   }
+   sum += x[i];
+   } 
+   return sum;
+ }
+ ```
+ 
+ 
+ *Switch it Up!*
+ https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
+ ```javascript
+ function switchItUp(number){
+ let arr = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+ return arr[number];
+ 
+ }
+ ```
+ 
+ 
+ *Super Duper Easy*
+ https://www.codewars.com/kata/55a5bfaa756cfede78000026
+ ```javascript
+ function problem(x){
+ 
+   if( typeof x === 'number') return x * 50 + 6;
+   if( typeof x === 'string') return "Error";
+ }
+ ```
+ 
+ 
+ *sPoNgEbOb MeMe*
+ https://www.codewars.com/kata/5982619d2671576e90000017
+ ```javascript
+ function spongeMeme(sentence) {
+   let newStr = '';
+   for(let i = 0; i < sentence.length; i++) {
+   if( i % 2 === 0) {
+   newStr += sentence[i].toUpperCase();
+   } else {
+   newStr += sentence[i].toLowerCase();
+   }
+   }
+   return newStr;
+ }
+ ```
+ 
+ 
+ *Grasshopper - Summation*
+ https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+ ```javascript
+ function summation(num) {
+   let summation = 0;
+   for(i = 0; i <= num; i++) {
+   summation += i;
+  } 
+  return summation;
+ }
+ ```
+ 
+ *Unfinished Loop - Bug Fixing #1*
+ https://www.codewars.com/kata/55c28f7304e3eaebef0000da
+ ```javascript
+ function createArray(number){
+   var newArray = [];
+   
+   for(var counter = 1; counter <= number; counter++){
+     newArray.push(counter);
+   }
+   
+   return newArray;
+ }
+ ```
+ 
+ *A Gift Well Spent*
+ https://www.codewars.com/kata/54554846126a002d5b000854
+ ```javascript
+ var buy = function(x, arr) {
+   let res = [];
+   for (let i = 0; i < arr.length - 1; i++) {
+     for (let q = i + 1; q < arr.length; q++) {
+ 
+       if (arr[i] + arr[q] === x) {
+         return [i, q];
+       }
+     }
+   }
+   return null;
+ };
+ ```
+ 
+ *Maximum Triplet Sum (Array Series #7)*
+ https://www.codewars.com/kata/5aa1bcda373c2eb596000112
+ ```javascript
+ function maxTriSum(numbers){
+  let sum = 0;
+   let res = numbers.sort((a, b) => b - a);
+   let arr = [];
+   for (let i = 0; i < res.length; i++){
+     if (arr.length >= 3){
+       break
+     }
+     if (!arr.includes(res[i])){
+       arr.push(res[i]);
+       sum += res[i];
+     }
+   }
+  return sum;
+ }
+ ```
+ 
+ 
