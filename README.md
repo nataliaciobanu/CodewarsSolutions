@@ -387,4 +387,114 @@ function finalGrade(exam, projects) {
  }
  ```
  
+ *Random case*
+ https://www.codewars.com/kata/57073869924f34185100036d
+ ```javascript
+ function randomCase(x) {
+ let xNew = '';
+   for(let i = 0; i < x.length; i++){
+   if(Math.round(Math.random()) >0){
+   xNew += x[i].toUpperCase();
+   } else {
+   xNew += x[i].toLowerCase();
+   }
+   }
+   return xNew;
+ }
+ ```
+ 
+ *Alphabet symmetry*
+ https://www.codewars.com/kata/59d9ff9f7905dfeed50000b0
+ ```javascript
+ function solve(arr){  
+   let alph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   let arrN = [];
+   for(let i = 0; i < arr.length; i++){
+     let count = 0;
+     for(let j = 0; j < arr[i].length; j++){
+     if(j === alph.indexOf(arr[i][j].toUpperCase()) ){
+     count++; 
+     }
+     }
+     arrN.push(count);
+   }
+   return arrN;
+ };
+ ```
+ 
+ *Remove String Spaces*
+ https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+ ```javascript
+ function noSpace(x){
+   let str = x.replace(/ /g,'');
+   return str;
+ }
+ ```
+ 
+ *Filter Coffee*
+ https://www.codewars.com/kata/56069d0c4af7f633910000d3
+ ```javascript
+ function search(budget, prices) {
+   return prices.filter((el) => el <= budget).sort((a, b) => a - b).join();
+ }
+ ```
+ 
+ *Training JS #23: methods of arrayObject---push(), pop(), shift() and unshift()*
+ https://www.codewars.com/kata/572af273a3af3836660014a1
+ ```javascript
+ const infiniteLoop = (arr,d,n) => {
+   for (let i = 1; i <= n; i++){
+   if (d === "left"){
+     arr[2].push(arr[0].shift());
+     arr[1].push(arr[2].shift());
+     arr[0].push(arr[1].shift());
+   }
+   if (d === "right"){
+     arr[0].unshift(arr[2].pop());
+     arr[1].unshift(arr[0].pop());
+     arr[2].unshift(arr[1].pop());
+   }
+   }
+   return arr;
+ }
+ ```
+ 
+ *Numerical Palindrome #1*
+ https://www.codewars.com/kata/58ba6fece3614ba7c200017f
+ ```javascript
+ function palindrome(num) { 
+   let str = '';
+   
+   if(typeof num !== 'number' || num < 0){
+   return 'Not valid';
+   }
+   str = num + '';
+   
+   for(let i = 0; i < Math.floor(str.length / 2); i++){
+   if(str[i] !== str[str.length - i - 1]) {
+   return false;
+   }
+   }
+   return true;
+ } 
+ ```
+ 
+ *Find the calculation type*
+ https://www.codewars.com/kata/5aca48db188ab3558e0030fa
+ ```javascript
+ function calcType(a, b, res) {
+   if(a + b === res) {
+   return 'addition'
+   }
+     if(a - b === res) {
+   return 'subtraction'
+   }
+      if(a * b === res) {
+   return 'multiplication'
+   } 
+       if(a / b === res) {
+   return 'division'
+   }
+ }
+ ```
  
