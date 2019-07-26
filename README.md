@@ -497,4 +497,143 @@ function finalGrade(exam, projects) {
    }
  }
  ```
- 
+
+*Simple beads count*
+https://www.codewars.com/kata/58712dfa5c538b6fc7000569
+```javascript
+  function countRedBeads(n) {
+  if(n < 2){
+  return 0;
+  }
+  return (n - 1) * 2;
+}
+```
+
+*Do I get a bonus?*
+https://www.codewars.com/kata/56f6ad906b88de513f000d96
+```javascript
+  function bonusTime(salary, bonus) {
+  return bonus ? `£${salary * 10}` : `£${salary}`;
+}
+
+or
+
+  function bonusTime(salary, bonus) {
+  return bonus ? '£' + salary * 10 : '£' + salary;
+}
+
+or
+
+  function bonusTime(salary, bonus) {
+  if(bonus) {
+  return  '£' + salary * 10;
+  } else {
+  return '£' + salary;
+  }
+}
+```
+
+*String ends with?*
+https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
+```javascript
+  function solution(str, ending){
+  return (str.slice(str.length - ending.length) === ending);
+}
+```
+
+*A Needle in the Haystack*
+https://www.codewars.com/kata/56676e8fabd2d1ff3000000c
+```javascript
+  function findNeedle(haystack) {
+  return 'found the needle at position ' + haystack.indexOf('needle');
+  }
+```
+
+*Grasshopper - Variable Assignment Debug*
+https://www.codewars.com/kata/5612e743cab69fec6d000077
+```javascript
+var a = "dev"
+var b = "Lab"
+
+var name = a + b
+```
+
+
+*Reverse List Order*
+https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
+```javascript
+  function reverseList(list) {
+  let arr = [];
+  for(let i = list.length - 1; i >= 0; i--) {
+  arr.push(list[i]);
+  }
+  return arr;
+}
+```
+
+*Count of positives / sum of negatives*
+https://www.codewars.com/kata/576bb71bbbcf0951d5000044
+```javascript
+  function countPositivesSumNegatives(input) {
+  let posCount = 0;
+  let negSum = 0;
+  if (input == null || input.length === 0) {
+    return [];
+  }
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] > 0) {
+      posCount++;
+    } else {
+      negSum += input[i];
+    }
+  }
+  return [posCount, negSum];
+}
+```
+
+*String repeat*
+https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
+```javascript
+  function repeatStr (n, string) {
+  return string.repeat(n);
+}
+```
+
+*Man in the west*
+https://www.codewars.com/users/natalia_ciobanu/completed_solutions
+```javascript
+    function checkTheBucket(bucket) {
+    let gold = 'gold';
+    for (let i = 0; i < bucket.length; i++) {
+      if (bucket[i] === 'gold') {
+          return true;
+        }
+      }
+      return false;
+    }
+```
+
+*Grasshopper - Personalized Message*
+https://www.codewars.com/kata/5772da22b89313a4d50012f7
+```javascript
+  function greet (name, owner) {
+  if (name === owner) {
+  return 'Hello boss';
+  } else {
+  return 'Hello guest';
+  }
+}
+```
+
+*Who is going to pay for the wall?*
+https://www.codewars.com/kata/58bf9bd943fadb2a980000a7
+```javascript
+  function whoIsPaying(name) {
+  let arr = [name];
+  if (name.length > 2) {
+  let str = name.substring(0, 2);
+  arr.push(str)
+  }
+  return arr;
+}
+```
