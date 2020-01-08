@@ -650,10 +650,29 @@ function race(v1, v2, g) {
     let hour = Math.floor(sec/3600);
     let min = Math.floor(sec/60) - 60 * hour;
     sec = Math.floor(Math.abs(sec) % 60);
-    return [hour, min, (sec < 10 ? sec: sec)];
+    return [hour, min, (sec < 10 ? sec : sec)];
     }
 }
 ```
 
+*Sum The Strings*
+https://www.codewars.com/kata/5966e33c4e686b508700002d
+```javascript
+function sumStr(a, b) {
+  return (+a + +b).toString();
+}
+```
+
+*Convert a Boolean to a String*
+https://www.codewars.com/kata/551b4501ac0447318f0009cd
+```javascript
+function booleanToString(b){
+  if( b == true){
+  return 'true'
+  } else if (b == false){
+  return 'false'
+  }
+}
+```
 
 
