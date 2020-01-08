@@ -272,10 +272,11 @@ function finalGrade(exam, projects) {
    }
  }
 =============== or =================
+
  function sumR(x) {
   let sum = 0;
    for(let i = 0; i < x.length; i++) {
-   if( typeof x[i] === 'string') {
+   if(typeof x[i] === 'string') {
    x[i] = Number (x[i]);
    }
    sum += x[i];
@@ -637,3 +638,22 @@ https://www.codewars.com/kata/58bf9bd943fadb2a980000a7
   return arr;
 }
 ```
+
+*Tortoise racing*
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c
+```javascript
+function race(v1, v2, g) {
+    if (v1 >= v2){
+    return null;
+    } else {
+    let sec = g / (v2 - v1) * 3600;
+    let hour = Math.floor(sec/3600);
+    let min = Math.floor(sec/60) - 60 * hour;
+    sec = Math.floor(Math.abs(sec) % 60);
+    return [hour, min, (sec < 10 ? sec: sec)];
+    }
+}
+```
+
+
+
