@@ -675,4 +675,21 @@ function booleanToString(b){
 }
 ```
 
+*Training JS #6: Basic data types--Boolean and conditional statements if..else*
+https://www.codewars.com/kata/571f832f07363d295d001ba8
+````javascript
+function trueOrFalse(val){
+return val ? 'true' : 'false';
+}
+````
+
+*Discover The Original Price*
+https://www.codewars.com/kata/552564a82142d701f5001228
+````javascript
+function discoverOriginalPrice(discountedPrice, salePercentage){
+  return Math.round(((100 * discountedPrice) / (100 - salePercentage)) * 100) / 100;
+}
+````
+
+
 
