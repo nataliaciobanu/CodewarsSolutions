@@ -263,7 +263,8 @@ function finalGrade(exam, projects) {
    return x.shift() + sumR(x);
    }
  }
-option#2
+
+option#2;
 
  function sumR(x) {
   let sum = 0;
