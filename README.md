@@ -11,6 +11,7 @@ Sleigh.prototype.authenticate = function(name, password) {
   return false;
 };
 ```
+
 *Return Negative*
 https://www.codewars.com/kata/55685cd7ad70877c23000102
 ```javascript
@@ -45,6 +46,7 @@ function positiveSum(arr) {
   return res;
 }
 ```
+
 *Remove First and Last Character*
 https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
 ```javascript
@@ -113,7 +115,6 @@ function whoIsPaying(name){
 }
 ```
 
-
 *Array plus array*
 https://www.codewars.com/kata/5a2be17aee1aaefe2a000151
 ```javascript
@@ -129,7 +130,6 @@ function arrayPlusArray(arr1, arr2) {
   }
 ```
 
-
 *Man in the west*
 https://www.codewars.com/kata/59bd5dc270a3b7350c00008b
 ```javascript
@@ -143,7 +143,6 @@ function checkTheBucket(bucket){
   return false;
 }
 ```
-
 
 *Reversed Strings*
 https://www.codewars.com/kata/5168bb5dfe9a00b126000018
@@ -179,7 +178,6 @@ function stringToArray(string){
 }
 ```
 
-
 *If you can't sleep, just count sheep!!*
 https://www.codewars.com/kata/5b077ebdaf15be5c7f000077
 ```javascript
@@ -192,7 +190,6 @@ var countSheep = function (num){
 }
 ```
 
-
 *Opposite number*
 https://www.codewars.com/kata/56dec885c54a926dcd001095
 ```javascript
@@ -200,7 +197,6 @@ function opposite(number) {
   return -number;
 }
 ```
-
 
 *The Feast of Many Beasts*
 https://www.codewars.com/kata/5aa736a455f906981800360d
@@ -222,7 +218,6 @@ function simpleMultiplication(number) {
     }
 ```
 
-
 *Type of sum*
 https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba
 ```javascript
@@ -230,7 +225,6 @@ function typeOfSum(a, b) {
   return typeof(a+b);
 }
 ```
-
 
 *Reverse a Number*
 https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5
@@ -247,7 +241,6 @@ function reverseNumber(n) {
 }
 ```
 
-
 *Student's Final Grade*
 https://www.codewars.com/kata/5ad0d8356165e63c140014d4
 ```javascript
@@ -258,7 +251,6 @@ function finalGrade(exam, projects) {
   return 0;
  } 
  ```
- 
  
  *Get list sum recursively*
  https://www.codewars.com/kata/57a84137cf1fa5f9f80000d6
@@ -271,7 +263,7 @@ function finalGrade(exam, projects) {
    return x.shift() + sumR(x);
    }
  }
-=============== or =================
+option#2
 
  function sumR(x) {
   let sum = 0;
@@ -285,7 +277,6 @@ function finalGrade(exam, projects) {
  }
  ```
  
- 
  *Switch it Up!*
  https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
  ```javascript
@@ -295,8 +286,7 @@ function finalGrade(exam, projects) {
  
  }
  ```
- 
- 
+  
  *Super Duper Easy*
  https://www.codewars.com/kata/55a5bfaa756cfede78000026
  ```javascript
@@ -306,7 +296,6 @@ function finalGrade(exam, projects) {
    if( typeof x === 'string') return "Error";
  }
  ```
- 
  
  *sPoNgEbOb MeMe*
  https://www.codewars.com/kata/5982619d2671576e90000017
@@ -323,7 +312,6 @@ function finalGrade(exam, projects) {
    return newStr;
  }
  ```
- 
  
  *Grasshopper - Summation*
  https://www.codewars.com/kata/55d24f55d7dd296eb9000030
@@ -517,13 +505,13 @@ https://www.codewars.com/kata/56f6ad906b88de513f000d96
   return bonus ? `£${salary * 10}` : `£${salary}`;
 }
 
-or
+option#2;
 
   function bonusTime(salary, bonus) {
   return bonus ? '£' + salary * 10 : '£' + salary;
 }
 
-or
+option#3;
 
   function bonusTime(salary, bonus) {
   if(bonus) {
@@ -553,8 +541,8 @@ https://www.codewars.com/kata/56676e8fabd2d1ff3000000c
 *Grasshopper - Variable Assignment Debug*
 https://www.codewars.com/kata/5612e743cab69fec6d000077
 ```javascript
-var a = "dev"
-var b = "Lab"
+var a = "dev";
+var b = "Lab";
 
 var name = a + b
 ```
