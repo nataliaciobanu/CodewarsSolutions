@@ -680,5 +680,34 @@ function discoverOriginalPrice(discountedPrice, salePercentage){
 }
 ````
 
+*What's the real floor?*
+https://www.codewars.com/users/natalia_ciobanu/completed_solutions
+```javascript
+function getRealFloor(n) {
+ if (n <= 0){
+  return n;
+  } else if (n >= 1 && n < 14  ){
+  return n - 1;
+  }else {
+  return n - 2;
+  }
+}
+```
+
+*Is he gonna survive?*
+https://www.codewars.com/kata/59ca8246d751df55cc00014c
+```javascript
+function hero(bullets, dragons){
+    return (bullets >= dragons*2) ? true : false
+}
+```
+
+*Beginner Series #2 Clock*
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a
+```javascript
+function past(h, m, s){
+    return (h * 3600000) + (m * 60000) + (s * 1000);
+}
+```
 
 
